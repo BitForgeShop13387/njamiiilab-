@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NjamiLab – Interactive Food Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍪 NjamiLab</h1>
+        <p>Welcome to the most interactive cookie and food lab!<br>
+        <a href="https://instagram.com/njamiii_lab" target="_blank">@njamiii_lab</a></p>
+    </header>
+
+    <nav>
+        <button class="tab active" data-tab="cookies">Cookies</button>
+        <button class="tab" data-tab="cakes">Cakes & Desserts</button>
+        <button class="tab" data-tab="savory">Savory Treats</button>
+    </nav>
+
+    <main>
+        <section id="gallery">
+            <h2>Community Gallery</h2>
+            <input type="file" id="upload" accept="image/*">
+            <div id="images"></div>
+        </section>
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <form id="review-form">
+                <input type="text" id="name" placeholder="Your name" required>
+                <textarea id="review-text" placeholder="Your review..." required></textarea>
+                <label>
+                    <span>Rating:</span>
+                    <select id="stars">
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                    </select>
+                </label>
+                <button type="submit">Post review</button>
+            </form>
+            <div id="review-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow us: <a href="https://instagram.com/njamiii_lab" target="_blank">@njamiii_lab</a></p>
+        <small>© NjamiLab 2025</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
